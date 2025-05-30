@@ -3,8 +3,7 @@
 A professional all-in-one business calculator built using HTML, CSS, and JavaScript. Includes GST, loan EMI, discount, profit margin, and basic arithmetic tools – all in one clean interface.
 
 ## 📸 Preview
-
-![Live Demo](https://sarvjeetkumar012.github.io/BizToolbox/)
+[Live Demo](https://sarvjeetkumar012.github.io/BizToolbox/)
 
 ## 🚀 Features
 
