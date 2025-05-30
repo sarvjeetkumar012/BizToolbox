@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center mb-4">💼 Business Calculator</h1>
+
+    <!-- Basic Arithmetic -->
+    <div class="calculator-section">
+      <h4><span class="icon">➕</span> Basic Arithmetic</h4>
+      <div class="row">
+        <div class="col">
+          <label class="form-label">Value A</label>
+          <input type="number" id="basicA" class="form-control" />
+        </div>
+        <div class="col">
+          <label class="form-label">Value B</label>
+          <input type="number" id="basicB" class="form-control" />
+        </div>
+      </div>
+      <button onclick="calculateBasic()" class="btn btn-primary mt-3">Calculate</button>
+      <div id="basicResult" class="mt-2"></div>
+    </div>
+
+    <!-- Profit Margin -->
+    <div class="calculator-section">
+      <h4><span class="icon">💰</span> Profit Margin</h4>
+      <label class="form-label">Cost Price</label>
+      <input type="number" id="costPrice" class="form-control" />
+      <label class="form-label mt-2">Selling Price</label>
+      <input type="number" id="sellingPrice" class="form-control" />
+      <button onclick="calculateProfit()" class="btn btn-success mt-3">Calculate</button>
+      <div id="profitResult" class="mt-2"></div>
+    </div>
+
+    <!-- GST Calculator -->
+    <div class="calculator-section">
+      <h4><span class="icon">📊</span> GST / Tax Calculator</h4>
+      <label class="form-label">Amount</label>
+      <input type="number" id="gstAmount" class="form-control" />
+      <label class="form-label mt-2">GST %</label>
+      <input type="number" id="gstPercent" class="form-control" />
+      <button onclick="calculateGST()" class="btn btn-warning mt-3">Calculate</button>
+      <div id="gstResult" class="mt-2"></div>
+    </div>
+
+    <!-- Loan Calculator -->
+    <div class="calculator-section">
+      <h4><span class="icon">🏦</span> Loan Interest Calculator</h4>
+      <label class="form-label">Principal Amount</label>
+      <input type="number" id="loanPrincipal" class="form-control" />
+      <label class="form-label mt-2">Annual Interest Rate (%)</label>
+      <input type="number" id="loanRate" class="form-control" />
+      <label class="form-label mt-2">Time (years)</label>
+      <input type="number" id="loanTime" class="form-control" />
+      <button onclick="calculateLoan()" class="btn btn-danger mt-3">Calculate</button>
+      <div id="loanResult" class="mt-2"></div>
+    </div>
+
+    <!-- Discount Calculator -->
+    <div class="calculator-section">
+      <h4><span class="icon">🏷️</span> Discount Calculator</h4>
+      <label class="form-label">Original Price</label>
+      <input type="number" id="discountPrice" class="form-control" />
+      <label class="form-label mt-2">Discount %</label>
+      <input type="number" id="discountPercent" class="form-control" />
+      <button onclick="calculateDiscount()" class="btn btn-info mt-3">Calculate</button>
+      <div id="discountResult" class="mt-2"></div>
+    </div>
+  </div>
+  <footer class="text-center mt-5 py-3" style="background-color: #1e1e2f; color: #f1f1f1;">
+    <p>&copy; 2025 Business Calculator. All Rights Reserved. <br>@sarvjeet kumar<br></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
